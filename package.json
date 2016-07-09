@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "ginode ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "*",
@@ -16,7 +16,7 @@
     "serve-favicon": "*"
   },
 
-  
+
   "engines": {
     "node": "6.2.0"
   }
