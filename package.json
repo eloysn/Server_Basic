@@ -15,6 +15,7 @@
     "mysql": "*",
     "serve-favicon": "*"
   },
+  
   "engines": {
     "node": "6.2.0"
   }
