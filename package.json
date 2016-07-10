@@ -13,10 +13,9 @@
     "express": "*",
     "morgan": "*",
     "mysql": "*",
+    "pg": "6.0.1",
     "serve-favicon": "*"
   },
-
-
   "engines": {
     "node": "6.2.0"
   }
