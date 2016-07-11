@@ -48,20 +48,20 @@ var bodyParser = require('body-parser');
 
 ///////////////////////////postgres_db//////////////////////////////
 
-var pg = require('pg');
-var conString = "postgres://puqckmidibljvw:yH9NcHHvyMRE_V8Sj4rAbJePpF@ec2-23-21-238-76.compute-1.amazonaws.com:5432/d9p0vu1qnrll9l";
-pg.defaults.ssl = true;
-pg.connect(conString, function(err, client) {
-  if (err) throw err;
-  console.log('Connected to postgres! Getting schemas...');
-
-  client
-      .query('SELECT * FROM COM;')
-      .on('row', function(row) {
-
-
-      });
-});
+// var pg = require('pg');
+// var conString = "postgres://puqckmidibljvw:yH9NcHHvyMRE_V8Sj4rAbJePpF@ec2-23-21-238-76.compute-1.amazonaws.com:5432/d9p0vu1qnrll9l";
+// pg.defaults.ssl = true;
+// pg.connect(conString, function(err, client) {
+//   if (err) throw err;
+//   console.log('Connected to postgres! Getting schemas...');
+//
+//   client
+//       .query('SELECT * FROM COM;')
+//       .on('row', function(row) {
+//
+//
+//       });
+// });
 
 ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
