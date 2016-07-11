@@ -9,6 +9,8 @@ var bodyParser = require('body-parser');
 
 
 
+
+
 ///////////////////////////////////Conexion db mysql
 
 // var mysql = require('mysql');
@@ -88,10 +90,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-
-
-
-
 
 
 
