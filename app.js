@@ -161,10 +161,10 @@ function downloadJson(){
 
     });
     function respuestaJson(jsonString){
-        //var jsonParser = JSON.parse(jsonString);
-        //json = jsonParser;
-        //console.log(jsonParser);
-        console.log('Tarea');
+        var jsonParser = JSON.parse(jsonString);
+        json = jsonParser;
+        console.log(jsonParser);
+
     }
     
 }
@@ -173,7 +173,7 @@ var job = new CronJob('0 0 0-23/3 * * *', function() {
 
 
         console.log("Download Json Futboll" + new Date());
-        //downloadJson();
+        downloadJson();
 
 
     }, function () {
