@@ -15,8 +15,7 @@ var jsonObject =  {
 
 function downloadJson(){
 
-
-
+    
     var body = '';
     http.get(url, function(res){
 
@@ -39,8 +38,8 @@ function downloadJson(){
     });
     function respuestaJson(jsonString){
 
-        json = jsonString
-        console.log(json);
+        jsonObject = jsonString
+        console.log(jsonObject);
     }
 
 
