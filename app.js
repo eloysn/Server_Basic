@@ -97,7 +97,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-
 app.use('/', router);
 router.get('/', function(req, res, next) {
 
@@ -105,6 +104,17 @@ router.get('/', function(req, res, next) {
 
 
 });
+
+
+app.use('/dw', router);
+router.get('/dw', function(req, res, next) {
+
+    downloadJson();
+    res.json({'request': json});
+
+
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -163,13 +173,14 @@ function downloadJson(){
     function respuestaJson(jsonString){
         var jsonParser = JSON.parse(jsonString);
         json = jsonParser;
-        console.log(jsonParser);
+        console.log("Download Json Futboll" + new Date());
+        //console.log(jsonParser);
 
     }
     
 }
 
-var job = new CronJob('00 00 18 * * *', function() {
+var job = new CronJob('00 00 10 * * *', function() {
 
 
         console.log("Download Json Futboll" + new Date());
