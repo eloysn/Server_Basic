@@ -100,7 +100,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 router.get('/', function(req, res, next) {
 
-    res.json({'request': json});
+    res.json(json);
 
 
 });
