@@ -180,7 +180,7 @@ function downloadJson(){
     
 }
 
-var job = new CronJob('00 00 10 * * *', function() {
+var job = new CronJob('00 07 22 * * *', function() {
 
 
         console.log("Download Json Futboll" + new Date());
