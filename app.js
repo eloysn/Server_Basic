@@ -173,17 +173,17 @@ function downloadJson(){
     function respuestaJson(jsonString){
         var jsonParser = JSON.parse(jsonString);
         json = jsonParser;
-        console.log("Download Json Futboll" + new Date());
+        console.log("-----Download Json Futboll------" + new Date());
         //console.log(jsonParser);
 
     }
     
 }
 
-var job = new CronJob('00 10 20 * * *', function() {
+var job = new CronJob('00 00 10 * * *', function() {
 
 
-        console.log("Download Json Futboll" + new Date());
+        console.log("------Init CronJob -------" + new Date());
         downloadJson();
 
 
