@@ -1,0 +1,23 @@
+{
+  "name": "servidor_basico",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "cron": "*",
+    "debug": "*",
+    "ejs": "*",
+    "express": "*",
+    "morgan": "*",
+    "mysql": "*",
+    "pg": "*",
+    "serve-favicon": "*"
+  },
+  "engines": {
+    "node": "6.2.0"
+  }
+}
